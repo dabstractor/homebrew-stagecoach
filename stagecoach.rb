@@ -5,21 +5,21 @@
 class Stagecoach < Formula
   desc "Snapshot-based AI commit message generator that uses YOUR local CLI agent"
   homepage "https://github.com/dabstractor/stagecoach"
-  version "0.1.5"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.5/stagecoach_0.1.5_darwin_amd64.tar.gz"
-      sha256 "d3ef5044f2bb4caa3deffb4f39e1cdf6a1ba4bf8b8578c2d2b9888acbfa7bebe"
+      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.7/stagecoach_0.1.7_darwin_amd64.tar.gz"
+      sha256 "b0bf058acf1f2f79cb4bf06733eab49aeed37294d7aeec6b6ede07f493c44688"
 
       define_method(:install) do
         bin.install "stagecoach"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.5/stagecoach_0.1.5_darwin_arm64.tar.gz"
-      sha256 "49fa0a6bc4ace25e9d955980ffd45c627793830131ef879ee3063e3a0fc6b368"
+      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.7/stagecoach_0.1.7_darwin_arm64.tar.gz"
+      sha256 "3d2b044b81a8d7195fb6c7e1558daebd8edd2f46851e8db3affd4a0b008d173c"
 
       define_method(:install) do
         bin.install "stagecoach"
@@ -29,15 +29,15 @@ class Stagecoach < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.5/stagecoach_0.1.5_linux_amd64.tar.gz"
-      sha256 "f0071aa9332344495026a14b00c492db434135af0198181c7b0cf1130e2becd9"
+      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.7/stagecoach_0.1.7_linux_amd64.tar.gz"
+      sha256 "1d9a2503dffdc2716b86bea1d4b14e1c1d8bb811d1e616f7829a96c9bb6e7fcd"
       define_method(:install) do
         bin.install "stagecoach"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.5/stagecoach_0.1.5_linux_arm64.tar.gz"
-      sha256 "5a85e5023a76a49f652f792cd2224264830404155d7c9ee0037b1cfeb68d300e"
+      url "https://github.com/dabstractor/stagecoach/releases/download/v0.1.7/stagecoach_0.1.7_linux_arm64.tar.gz"
+      sha256 "886dd749f1b3eba89d7f73b0a03572363956dd85cb44c285ac10c5d60fda90f2"
       define_method(:install) do
         bin.install "stagecoach"
       end
